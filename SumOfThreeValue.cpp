@@ -42,7 +42,7 @@ int solve()
 		rep_a(j,i+1,n-1)
 		{
 			while(a[i].first+a[j].first+a[k].first>x)k--;
-			if(a[i].first+a[j].first+a[k].first == x)
+			if(a[i].first+a[j].first+a[k].first == x && k>j)
 			{
 				cout<<a[i].second<<" "<<a[j].second<<" "<<a[k].second<<endl;
 				return 0;						
